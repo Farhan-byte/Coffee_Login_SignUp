@@ -9,7 +9,7 @@ class LoginScreen extends StatelessWidget {
     return Stack(
       children: [
         BackgroundImage(
-          image: 'assets/images/login_bg.jpg',
+          clr:Color(0xffebba34),
         ),
         Scaffold(
           backgroundColor: Colors.transparent,
@@ -17,12 +17,12 @@ class LoginScreen extends StatelessWidget {
             children: [
               Flexible(
                 child: Center(
-                  child: Text(
-                    'CoffeeApp',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 60,
-                        fontWeight: FontWeight.bold),
+                  child: Container(
+                  height:150,
+                  width: 130,
+               decoration: 
+               BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/coffeeCup.png'),fit: BoxFit.cover)),
+                    
                   ),
                 ),
               ),

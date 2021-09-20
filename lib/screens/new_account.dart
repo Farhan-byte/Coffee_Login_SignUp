@@ -11,7 +11,7 @@ class CreateNewAccount extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Stack(
       children: [
-        BackgroundImage(image: 'assets/images/peakpx.jpg'),
+        BackgroundImage(clr:Color(0xffebba34)),
         Scaffold(
           backgroundColor: Colors.transparent,
           body: SingleChildScrollView(
@@ -23,16 +23,16 @@ class CreateNewAccount extends StatelessWidget {
                 Stack(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top:110),
+                      padding: const EdgeInsets.only(top:70),
                       child: Center(
-                        child: Text(
-                      'CoffeeApp',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 60,
-                          fontWeight: FontWeight.bold),
+                  child: Container(
+                  height:150,
+                  width: 130,
+               decoration: 
+               BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/coffeeCup.png'),fit: BoxFit.cover)),
+                    
                   ),
-                      ),
+                ),
                     ),
                     
                   ],
